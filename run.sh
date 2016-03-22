@@ -1,1 +1,1 @@
-docker run --name workstation -it workstation bash
+docker run --name workstation -v ~/workspace:/workspace -it workstation bash
