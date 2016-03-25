@@ -17,6 +17,11 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 RUN apt-get install -y git vim wget maven
 
-RUN echo "set tabstop=4 shiftwidth=4 expandtab" >> .vimrc
+RUN apt-get install -y git vim wget maven
+RUN apt-get install -y curl
+
+RUN curl -fsSL https://get.docker.com/ | sh
+
+RUN echo "set tabstop=4 shiftwidth=4 expandtab" >> ~/.vimrc
 
 CMD bash
