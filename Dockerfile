@@ -16,8 +16,6 @@ RUN \
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 RUN apt-get install -y git vim wget maven
-
-RUN apt-get install -y git vim wget maven
 RUN apt-get install -y curl
 
 RUN curl -fsSL https://get.docker.com/ | sh
