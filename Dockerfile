@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER hamsterksu@gmail.com
 
 RUN apt-get update
-RUN apt-get install -y software-properties-common
+RUN apt-get install -y software-properties-common && apt-get update
 RUN add-apt-repository -y ppa:webupd8team/java
 RUN apt-get install -y oracle-java8-installer
 RUN apt-get install -y git vim wget maven
