@@ -10,13 +10,11 @@ RUN \
   add-apt-repository -y ppa:webupd8team/java && \
   apt-get update && \
   apt-get install -y oracle-java8-installer && \
-  rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/oracle-jdk8-installer
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
-RUN apt-get install -y oracle-java8-installer
 RUN apt-get install -y git vim wget maven
 
 RUN echo "set tabstop=4 shiftwidth=4 expandtab" >> .vimrc
